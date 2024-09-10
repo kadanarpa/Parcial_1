@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Seción</title>
+    <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/mines/log-in.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Inicio
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="programs.html">Programas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="log-in.html">Iniciar Seción</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <article>
+    <h2>Por favor ingrese sus credenciales para acceder al sistema</h2>
+    <div>
+        <label for="user" class="form-label mt-4">Usuario</label>
+        <input type="text" class="form-control" id="user" placeholder="Usuario" autocomplete="off">
+      </div>
+      <div>
+        <label for="clave" class="form-label mt-4">Password</label>
+        <input type="password" class="form-control" id="clave" placeholder="Password" autocomplete="off">
+      </div>
+      
+      <button onclick="inscribirse()" type="button" class="btn btn-primary">Primary</button>
+      <a class="btn btn-primary" href="sig-in.html" role="button">Registrarse</a>
+      <a class="btn btn-primary" href="index.html" role="button">Cancelar</a>
+  </article>
+</body>
+</html>

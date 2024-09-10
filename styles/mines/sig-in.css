@@ -1,0 +1,181 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-size: 16px;
+}
+
+header {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+}
+
+.formulary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+.formulary_label {
+  display: block;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 0 10px 10px;
+  cursor: pointer;
+}
+
+.formulary_groupInput {
+  position: relative;
+}
+
+.formulary_input {
+  width: 100%;
+  background-color: white;
+  border: 5px solid transparent;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 40px 0 10px;
+  transition: 0.3s ease all;
+}
+
+.formulary_input:focus {
+  border: 5px solid #72bdd6;
+  outline: none;
+  box-shadow: 0px 0px 30px rgba(163, 163, 163, 0.5);
+}
+
+.formulary_validationState {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 100;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.formulary_inputError {
+  font-size: 14px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulary_inputError-active {
+  display: block;
+}
+
+.group_tc,
+.formulary_message,
+.send-btn {
+  grid-column: span 2;
+  text-align: center;
+}
+
+.group_tc {
+  padding: 15px 0 0;
+}
+
+.formulary_message {
+  height: 45px;
+  line-height: 45px;
+  background: #f66080;
+  padding: 0 30px;
+  border-radius: 5px;
+  display: none;
+}
+
+.formulary_message-active {
+  display: block;
+}
+
+.formulary_message p {
+  /* Ya que los párrafos tienen margenes por defecto, se los quitamos */
+  margin: 0;
+}
+
+.send-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulary_btn {
+  height: 50px;
+  line-height: 45px;
+  width: 40%;
+  font-size: 16px;
+  background: #72bdd6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+
+.formulary_btn:hover {
+  background: white;
+  color: #72bdd6;
+  box-shadow: 0 0 30px rgba(163, 163, 163, 0.6);
+}
+
+.formulary_SuccessMessage {
+  display: none;
+  font-weight: bold;
+  color: #72bdd6;
+}
+
+.formulary_SuccessMessage-active {
+  display: block;
+}
+
+/* CORRECT STYLES */
+
+.formulary_group-correct .formulary_validationState {
+  color: #19a859;
+  opacity: 1;
+}
+
+.formulary_group-incorrect .formulary_validationState {
+  color: #f66080;
+  opacity: 1;
+  top: 16px;
+}
+
+.formulary_group-incorrect .formulary_label {
+  color: #f66080;
+}
+
+.formulary_group-incorrect .formulary_input {
+  border: 5px solid #f66080;
+  outline: none;
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width: 800px) {
+  .formulary {
+    grid-template-columns: 1fr;
+  }
+
+  .group_tc,
+  .formulary_message,
+  .send-btn {
+    grid-column: 1;
+  }
+
+  .formulary_btn {
+    width: 100%;
+  }
+}

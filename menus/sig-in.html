@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/mines/sig-in.css">
+</head>
+<body>
+    <main>
+        <form class="formulary" id="formulary" method="get" autocomplete="off">
+            <!-- First Name -->
+            <div class="formulary_group" id="firstName_group">
+                <label for="firstName" class="formulary_label">First Name</label>
+                <div class="formulary_groupInput">
+                    <input type="text" class="formulary_input" name="firstName" id="firstName" placeholder="e.g. Jhon"
+                        required>
+                    <i class="formulary_validationState fa-solid fa-square-xmark"></i>
+                    <p class="formulary_inputError">The First Name can only be from 4 to 16 characters, and just can
+                        contains letters and spaces.</p>
+                </div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="formulary_group" id="lastName_group">
+                <label for="LastName" class="formulary_label">Last Name</label>
+                <div class="formulary_groupInput">
+                    <input type="text" class="formulary_input" name="lastName" id="LastName" placeholder="e.g. Doe"
+                        required>
+                    <i class="formulary_validationState fa-solid fa-square-xmark"></i>
+                    <p class="formulary_inputError">The Last Name can only be from 4 to 16 characters, and just can
+                        contains letters and spaces.</p>
+                </div>
+            </div>
+
+            <!-- User -->
+            <div class="formulary_group" id="user_group">
+                <label for="user" class="formulary_label">User</label>
+                <div class="formulary_groupInput">
+                    <input type="text" class="formulary_input" name="user" id="user" placeholder="e.g. JhonDoe_12345"
+                        required>
+                    <i class="formulary_validationState fa-solid fa-square-xmark"></i>
+                    <p class="formulary_inputError">The User can only be from 4 to 16 characters, and just can
+                        contains numbers, letters and underscores.</p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="formulary_group" id="email_group">
+                <label for="email" class="formulary_label">E-mail</label>
+                <div class="formulary_groupInput">
+                    <input type="text" class="formulary_input" name="email" id="email"
+                        placeholder="e.g. jhon_doe@example.com" required>
+                    <i class="formulary_validationState fa-solid fa-square-xmark"></i>
+                    <p class="formulary_inputError">The E-mail just can contains letters, numbers, dots, dashes and
+                        underscores.</p>
+                </div>
+            </div>
+
+            <!-- Telephone Number -->
+            <div class="formulary_group" id="tel_group">
+                <label for="tel" class="formulary_label">Telephone Number</label>
+                <div class="formulary_groupInput">
+                    <input type="text" class="formulary_input" name="tel" id="tel" required>
+                    <i class="formulary_validationState fa-solid fa-square-xmark"></i>
+                    <p class="formulary_inputError">The Telephone number only can contains numbers with a max of 10.</p>
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="formulary_group" id="password_group">
+                <label for="password" class="formulary_label">Password</label>
+                <div class="formulary_groupInput">
+                    <input type="password" class="formulary_input" name="password" id="password" required>
+                    <i class="formulary_validationState fa-solid fa-square-xmark"></i>
+                    <p class="formulary_inputError">The Password can only be from 4 to 20 characters.</p>
+                </div>
+            </div>
+
+            <!-- Validate Password -->
+            <div class="formulary_group" id="passwordRepeat_group">
+                <label for="passwordRepeat" class="formulary_label">Repeat Password</label>
+                <div class="formulary_groupInput">
+                    <input type="password" class="formulary_input" name="passwordRepeat" id="passwordRepeat" required>
+                    <i class="formulary_validationState fa-solid fa-square-xmark"></i>
+                    <p class="formulary_inputError">The Passwords don't match.</p>
+                </div>
+            </div>
+            <!-- Conditions and Terms -->
+            <div class="group_tc" id="group_tc">
+                <label class="formulary_label">
+                    <!-- We don't specificate a for attribute because we're going to put the input inside the label -->
+                    <input type="checkbox" name="tc" id="tc">
+                    Accept Conditions and Terms.
+                </label>
+            </div>
+
+            <!-- Message -->
+            <div class="formulary_message" id="formulary_message">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Fill out the form correctly</p>
+            </div>
+
+            <!-- Submit buttom -->
+            <div class="send-btn">
+                <button type="submit" class="formulary_btn">Send</button>
+                <p class="formulary_SuccessMessage" id="formulary_SuccessMessage">The form has been sent Succesfully.</p>
+            </div>
+        </form>
+    </main>
+    <script src="../scripts/mines/sig-in.js"></script>
+    <script src="https://kit.fontawesome.com/fb14245d79.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

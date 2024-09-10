@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas</title>
+    <link rel="stylesheet" href="../styles/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/mines/home.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html">Programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="log-in.html">Iniciar Seción</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="main-body">
+        <!-- Programas -->
+        <div class="container my-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Programa 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/math.jpeg" class="card-img-top" alt="Imagen Programa 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Matemáticas</h5>
+                            <p class="card-text">Breve descripción del programa 1.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                                Ver más
+                              </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal 1 -->
+                <div class="modal" id="modal1">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Programa 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/math.jpeg" class="card-img-top" alt="Imagen Programa 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Español</h5>
+                            <p class="card-text">Breve descripción del programa 2.</p>
+                            <button class="btn btn-primary"
+                                onclick="mostrarDescripcion(2)">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Programa 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen Programa 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ciencias Naturales</h5>
+                            <p class="card-text">Breve descripción del programa 3.</p>
+                            <button class="btn btn-primary"
+                                onclick="mostrarDescripcion(3)">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Programa 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen Programa 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ing. Software</h5>
+                            <p class="card-text">Breve descripción del programa 3.</p>
+                            <button class="btn btn-primary"
+                                onclick="mostrarDescripcion(4)">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Programa 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen Programa 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ing. Civil</h5>
+                            <p class="card-text">Breve descripción del programa 3.</p>
+                            <button class="btn btn-primary"
+                                onclick="mostrarDescripcion(5)">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Programa 6 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen Programa 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ing. Industrial</h5>
+                            <p class="card-text">Breve descripción del programa 3.</p>
+                            <button class="btn btn-primary"
+                                onclick="mostrarDescripcion(6)">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
